@@ -6,14 +6,12 @@
     <form class="custom-form" method="post">
       <input
         type="email"
-        [(ngModel)]="email"
         name="email"
         placeholder="Email Address"
         required
       />
       <input
         type="password"
-        [(ngModel)]="password"
         name="password"
         placeholder="Password"
         required
@@ -22,23 +20,21 @@
     </form>
 
     <div class="social-login">
-      <button class="social-btn facebook-btn" (click)="loginWith('facebook')">
+      <button class="social-btn google-btn">
+        <img src="assets/img/google.png" class="icon" alt="Google" />
+        <span>Google</span>
+      </button>
+      <button class="social-btn apple-btn">
+        <img src="assets/img/apple.png" class="icon" alt="Apple" />
+        <span>Apple</span>
+      </button>
+      <button class="social-btn facebook-btn">
         <img src="assets/img/facebook.png" class="icon" alt="Facebook" />
-        Login with Facebook
-      </button>
-
-      <button class="social-btn google-btn" (click)="loginWith('google')">
-        <img src="assets/img/Google.png" class="icon" alt="Google" />
-        Login with Google
-      </button>
-
-      <button class="social-btn microsoft-btn" (click)="loginWith('microsoft')">
-        <img src="assets/img/microsoft.png" class="icon" alt="Microsoft" />
-        Login with Microsoft
+        <span>Facebook</span>
       </button>
     </div>
 
-    <button class="register-btn" (click)="register()">Register</button>
+    <a href="/register" class="register-btn">Register</a>
     <a href="#" class="forgot-password">Lost your password?</a>
   </div>
 </div>

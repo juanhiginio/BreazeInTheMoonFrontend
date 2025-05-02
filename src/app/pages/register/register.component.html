@@ -1,0 +1,64 @@
+    <div class="register-container">
+        <div class="register-card">
+        <h1>Regístrate</h1>
+        <p>Crea tu cuenta en Nombre del hotel</p>
+    
+        <form class="custom-form" method="post">
+            <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            required
+            />
+            <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            />
+            <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+            />
+            <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            required
+            />
+    
+            <div class="role-selection">
+            <label>
+                <input type="radio" name="role" value="user" checked />
+                Usuario
+            </label>
+            <label>
+                <input type="radio" name="role" value="admin" />
+                Administrador
+            </label>
+            </div>
+    
+            <button type="submit" class="primary-btn">Register now</button>
+        </form>
+    
+        <div class="social-register">
+            <button class="social-btn google-btn">
+            <img src="assets/img/google.png" class="icon" alt="Google" />
+            <span>Google</span>
+            </button>
+            <button class="social-btn apple-btn">
+            <img src="assets/img/apple.png" class="icon" alt="Apple" />
+            <span>Apple</span>
+            </button>
+            <button class="social-btn facebook-btn">
+            <img src="assets/img/facebook.png" class="icon" alt="Facebook" />
+            <span>Facebook</span>
+            </button>
+        </div>
+    
+        <a href="/login" class="login-link">Already have an account? Login</a>
+        </div>
+    </div>
+    
