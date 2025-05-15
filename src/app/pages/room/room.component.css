@@ -1,0 +1,23 @@
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+    .room-detail {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    }
+    .room-detail img {
+    max-width: 100%;
+    height: auto;
+    }
