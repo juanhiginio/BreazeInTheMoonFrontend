@@ -3,5 +3,25 @@
     </header>
     <div *ngIf="roomId" class="room-detail">
     <h2>Habitación {{ roomId }}</h2>
-    <p>Aquí se mostrarán los detalles de la habitación {{ roomId }}.</p>
+
+    <div *ngIf="roomId === '1'">
+        <img src="assets/images/room-standard-detail.jpg" alt="Habitación Standard">
+        <h3>Habitación Standard</h3>
+        <p>Disfruta de nuestra Habitación Standard, equipada con una cama doble, baño privado, aire acondicionado, y Wi-Fi gratuito. Perfecta para viajeros que buscan comodidad y conveniencia.</p>
+        <button (click)="onReserveClick()" class="reserve-button">Reservar Ahora</button>
+    </div>
+
+    <div *ngIf="roomId === '2'">
+        <img src="assets/images/room-deluxe-detail.jpg" alt="Habitación Deluxe">
+        <h3>Habitación Deluxe</h3>
+        <p>Nuestra Habitación Deluxe ofrece una experiencia de lujo con una cama king-size, baño privado con bañera, aire acondicionado, minibar, y Wi-Fi gratuito. Ideal para quienes buscan un toque de elegancia.</p>
+        <button (click)="onReserveClick()" class="reserve-button">Reservar Ahora</button>
+    </div>
+
+    <div *ngIf="roomId === '3'">
+        <img src="assets/images/room-suite-detail.jpg" alt="Habitación Suite">
+        <h3>Habitación Suite</h3>
+        <p>La Habitación Suite es la opción definitiva en lujo y espacio, con una cama king-size, sala de estar separada, baño privado con bañera y ducha, aire acondicionado, minibar, y Wi-Fi gratuito. Perfecta para una estancia inolvidable.</p>
+        <button (click)="onReserveClick()" class="reserve-button">Reservar Ahora</button>
+    </div>
     </div>

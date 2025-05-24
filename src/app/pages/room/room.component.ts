@@ -1,19 +1,25 @@
     import { Component } from '@angular/core';
-    import { ActivatedRoute } from '@angular/router';
+    import { ActivatedRoute, Router } from '@angular/router';
+    import { CommonModule } from '@angular/common';
 
     @Component({
-    selector: 'app-room',
+    selector: 'app-room-detail',
     standalone: true,
+    imports: [CommonModule], // Importa CommonModule para usar *ngIf
     templateUrl: './room.component.html',
     styleUrls: ['./room.component.css']
     })
-    export class RoomComponent {
+    export class RoomDetailComponent {
     roomId: string | null = null;
 
-    constructor(private route: ActivatedRoute) {}
+    constructor(private route: ActivatedRoute, private router: Router) {}
 
     ngOnInit() {
         this.roomId = this.route.snapshot.paramMap.get('id');
-        // Aquí puedes cargar los detalles de la habitación basada en roomId
+    }
+
+    onReserveClick() {
+        // Navega a la página de reserva con el roomId como parámetro
+        this.router.navigate(['/reserva', this.roomId]);
     }
     }
