@@ -1,0 +1,59 @@
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    }
+
+    header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+    .room-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    }
+
+    .room-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    }
+
+    .room-detail h2 {
+    color: #333;
+    }
+
+    .room-detail h3 {
+    color: #444;
+    }
+
+    .room-detail p {
+    color: #666;
+    line-height: 1.6;
+    }
+
+    .reserve-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    }
+
+    .reserve-button:hover {
+    background-color: #555;
+    }

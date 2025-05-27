@@ -1,0 +1,43 @@
+    <header>
+    <h1>Bienvenido a Hotel Paradise</h1>
+    </header>
+    <nav>
+    <button routerLink="/login">Iniciar Sesión</button>
+    <button routerLink="/register">Registrarse</button>
+    </nav>
+    <div class="hotel-description">
+    <h2>Descubre Hotel Paradise</h2>
+    <p>
+        Bienvenido a Hotel Paradise, un refugio de lujo y comodidad ubicado en el corazón de la ciudad. Nuestro hotel ofrece una experiencia inigualable con habitaciones elegantes, servicios excepcionales y una ubicación privilegiada cerca de las principales atracciones turísticas.
+    </p>
+    <p>
+        Disfruta de nuestras instalaciones de primera clase, que incluyen un spa de lujo, un gimnasio completamente equipado, y una piscina al aire libre. Nuestro restaurante ofrece una deliciosa variedad de platos internacionales, preparados por chefs de renombre.
+    </p>
+    <p>
+        En Hotel Paradise, nos comprometemos a hacer que tu estancia sea memorable. Ya sea que viajes por negocios o por placer, nuestro equipo dedicado está aquí para asegurarse de que tengas una experiencia inolvidable.
+    </p>
+    </div>
+    <div class="search-container">
+    <input type="text" placeholder="Buscar hoteles...">
+    <input type="date" id="check-in" name="check-in">
+    <input type="date" id="check-out" name="check-out">
+    <select name="personas" id="personas">
+        <option value="1">1 Persona</option>
+        <option value="2">2 Personas</option>
+        <option value="3">3 Personas</option>
+        <option value="4">4 Personas</option>
+    </select>
+    <button>Buscar</button>
+    </div>
+    <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4216814846818!3d37.77492977975905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818c8f8f8f8f%3A0x8085818c8f8f8f8f!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1625440000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="hotel-list">
+    <a routerLink="/hotel/luxury/rooms" class="hotel-card">
+        <img src="assets/images/hotel-luxury.jpg" alt="Hotel Luxury">
+        <h3>Hotel Luxury</h3>
+        <p>Descripción del Hotel Luxury.</p>
+    </a>
+    <!-- Más hoteles... -->
+    </div>
+

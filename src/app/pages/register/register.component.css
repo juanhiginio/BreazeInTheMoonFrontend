@@ -1,0 +1,116 @@
+    .register-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    }
+    
+    .register-card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .custom-form input {
+        width: 88%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: transparent;
+        font-size: 14px;
+    }
+    
+    .role-selection {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .role-selection label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .role-selection input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .primary-btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background: #ff5733;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s;
+    }
+    
+    .primary-btn:hover {
+        background: #e54f2e;
+    }
+    
+    .social-register {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .social-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        background-color: #f9f9f9;
+        transition: background-color 0.3s;
+    }
+    
+    .social-btn:hover {
+        background-color: #e0e0e0;
+    }
+    
+    .social-btn img.icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+    }
+    
+    .social-btn span {
+        font-size: 12px;
+        color: #333;
+    }
+    
+    .login-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #555;
+        text-decoration: none;
+    }
+    
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    
